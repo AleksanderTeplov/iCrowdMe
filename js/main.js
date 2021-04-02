@@ -221,3 +221,14 @@ $(window).on('scroll',function() {
 });
 
 
+// Become A Member
+var login = false
+$('.become-a-member').on('click', function(e){
+	e.preventDefault()
+
+	if (login) {
+		$(this).html('Вы участник')
+	} else {
+		alert('Сначала вы должны войти на сайт')
+	}
+})
